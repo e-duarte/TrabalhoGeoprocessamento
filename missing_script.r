@@ -19,7 +19,7 @@ model_x <- lm(formula= coord_x ~ relevo_elevacao +
               taxon_sibcs_2006 + relevo_local + relevo_declividade + relevo_posicao,
             data=imputeData)
 
-model_y <- lm(formula= coord_x ~ relevo_elevacao +
+model_y <- lm(formula= coord_y ~ relevo_elevacao +
               taxon_sibcs_2006 + relevo_local + relevo_declividade + relevo_posicao,
             data=imputeData)
 
