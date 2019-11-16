@@ -1,6 +1,6 @@
 install.packages("mice") #pacote que contem função para imputação de dados
 
-ob <- read.csv2("observacao.csv", sep=",", dec = ".")
+ob <- read.csv2("data/observacao.csv", sep=",", dec = ".")
 
 library(mice, warn.conflicts = FALSE) #carrega a lib mice
 #md.pattern(ob)
