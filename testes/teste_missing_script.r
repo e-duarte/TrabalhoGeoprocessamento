@@ -6,14 +6,14 @@ ob <- read.csv2("data/observacao.csv", sep=",", dec = ".")
 library(mice, warn.conflicts = FALSE) #carrega a lib mice
 #md.pattern(ob)
 
-tempData <- mice(ob,m=1,maxit=50,meth='cart',seed=500) # função para imputação de dados
+tempData <- mice(ob,m=5,maxit=50,meth='pmm',seed=500) # função para imputação de dados
 
 summary(tempData)
 
 
 #ob[1,5] <- NA
 #tempData$imp$relevo_elevacao
-imputeData <- complete(tempData) #extração da nova tabela com dados imputados]
+imputeData <- complete(tempData,3) #extração da nova tabela com dados imputados]
 
 ################## MODELOS #########################
 model_x <- lm(formula= coord_x ~ relevo_elevacao +
@@ -21,6 +21,10 @@ model_x <- lm(formula= coord_x ~ relevo_elevacao +
             data=imputeData)
 
 model_y <- lm(formula= coord_y ~ relevo_elevacao +
+              taxon_sibcs_2006 + relevo_local + relevo_declividade + relevo_posicao,
+            data=imputeData)
+
+model <- lm(cbind(coord_x, coord_y) ~ relevo_elevacao +
               taxon_sibcs_2006 + relevo_local + relevo_declividade + relevo_posicao,
             data=imputeData)
 
@@ -35,3 +39,5 @@ instance <- data.frame(
 
 predict(model_x, newdata = instance)
 predict(model_y, newdata = instance)
+predict(model, newdata = instance)
+summary(model)

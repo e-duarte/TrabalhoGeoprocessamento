@@ -18,5 +18,8 @@ londrina <-
   googlesheets::gs_read(ws = 'observacao', na = '-', comment ="#metadado>")
 
 obs <- rbind(belavista, cambe, londrina) %>%
-  dplyr::mutate(
-    taxon = stringr::word(taxon_sibcs_2006, sep=',')
+  dplyr::mutate(taxon = stringr::word(taxon_sibcs_2006, sep=',')) %>%
+  dplyr::select(-observacao_id, -observacao_data, -coord_sistema, -coord_precisao,
+                -coord_fonte, -pais_id, -estado_id, -municipio_id, -amostra_tipo,
+                -amostra_quanti, -amostra_area, -taxon_sibcs_2006)
+write.csv(obs, "data/dataset_tratada.csv", row.names = FALSE)
