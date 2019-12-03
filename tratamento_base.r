@@ -22,4 +22,8 @@ obs <- rbind(belavista, cambe, londrina) %>%
   dplyr::select(-observacao_id, -observacao_data, -coord_sistema, -coord_precisao,
                 -coord_fonte, -pais_id, -estado_id, -municipio_id, -amostra_tipo,
                 -amostra_quanti, -amostra_area, -taxon_sibcs_2006)
+
+if(dir.exists("data")){
+  dir.create("data")
+}
 write.csv(obs, "data/dataset_tratada.csv", row.names = FALSE)
