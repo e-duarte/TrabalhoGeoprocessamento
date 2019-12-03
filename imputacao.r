@@ -1,5 +1,5 @@
 if(file.exists("dataset_tratada")){
-  
+  cat("Erro - Arquivo dataset_tratada não encontrado")
 }else{
   ctb <- read.csv2("data/dataset_tratada.csv", sep=",", dec = ".")
   library(mice, warn.conflicts = FALSE)
