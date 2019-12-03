@@ -23,7 +23,7 @@ obs <- rbind(belavista, cambe, londrina) %>%
                 -coord_fonte, -pais_id, -estado_id, -municipio_id, -amostra_tipo,
                 -amostra_quanti, -amostra_area, -taxon_sibcs_2006)
 
-if(dir.exists("data")){
+if(!dir.exists("data")){
   dir.create("data")
 }
 write.csv(obs, "data/dataset_tratada.csv", row.names = FALSE)
