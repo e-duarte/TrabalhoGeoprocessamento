@@ -1,0 +1,29 @@
+observacao_id,observacao_data,coord_sistema,coord_x,coord_y,coord_precisao,coord_fonte,pais_id,estado_id,municipio_id,amostra_tipo,amostra_quanti,amostra_area,taxon_sibcs_2006,relevo_elevacao,relevo_local,relevo_declividade,relevo_posicao
+#metadado>,Data da observação,Sistema de referência de coordenadas,Leste,Norte,Precisão das coordenadas,Fonte das coordenadas,País,Unidade federativa,Município,Tipo de amostragem,Quantidade de subamostras,Área amostral,Classificação taxonômica SiBCS 2006,Altitude,Classe de relevo local,Declividade,Posição
+#metadado>,-,-,m,m,m,-,-,-,-,-,-,m^2,-,m,-,%,-
+C1,xx-xx-2011,EPSG:29192,471.304,7.422.786,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",613,plano,2,Terço superior
+C2,xx-xx-2011,EPSG:29192,470.978,7.422.209,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",608,ondulado,16,Terço inferior
+C3,xx-xx-2011,EPSG:29192,472.804,7.420.230,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",625,plano,2,Terço médio
+C4,xx-xx-2011,EPSG:29192,470.590,7.420.416,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Neossolo Regolítico Eutrófico Típico, A chernozêmico, Textura argilosa",596,forte ondulado,29,-
+C5,xx-xx-2011,EPSG:29192,470.440,7.420.235,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Nitossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",567,forte ondulado,26,Terço Inferior
+C6,xx-xx-2011,EPSG:29192,469.279,7.415.881,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",665,plano,-,Topo
+C7,xx-xx-2011,EPSG:29192,472.224,7.412.033,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",575,suave ondulado,4,Terço médio
+C8,xx-xx-2011,EPSG:29192,470.567,7.427.756,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",655,suave ondulado,5,Terço superior
+C9,xx-xx-2011,EPSG:29192,470.804,7.431.549,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",615,suave ondulado,4,Terço superior
+C10,xx-xx-2011,EPSG:29192,469.207,7.432.403,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",536,ondulado,14,Terço inferior
+C11,xx-xx-2011,EPSG:29192,471.047,7.435.590,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Distroférrico Típico, A moderado, Textura muito argilosa",556,suave ondulado,4,Terço inferior
+C12,xx-xx-2011,EPSG:29192,472.287,7.439.710,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",454,ondulado,12,Terço inferior
+C13,xx-xx-2011,EPSG:29192,469.772,7.437.535,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",489,suave ondulado,6,Terço médio
+C14,xx-xx-2011,EPSG:29192,467.420,7.437.483,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Nitossólico, A moderado, Textura muito argilosa",533,plano,-,Topo
+C15,xx-xx-2011,EPSG:29192,465.348,7.438.393,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",526,ondulado,9,Terço médio
+C16,xx-xx-2011,EPSG:29192,459.421,7.438.878,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Nitossolo Vermelho Eutroférrico Típico, A chernozêmico, Textura argilosa",565,ondulado,16,Terço médio
+C17,xx-xx-2011,EPSG:29192,463.503,7.442.916,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",550,suave ondulado,4,Topo
+C18,xx-xx-2011,EPSG:29192,467.049,7.447.149,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",500,plano,2,Terço superior
+C19,xx-xx-2011,EPSG:29192,473.304,7.449.447,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Nitossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",453,ondulado,6,Terço médio
+C20,xx-xx-2011,EPSG:29192,466.634,7.451.118,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",431,plano,-,Terço superior
+C21,xx-xx-2011,EPSG:29192,478.174,7.436.970,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",618,suave ondulado,5,Topo
+C22,xx-xx-2011,EPSG:29192,476.096,7.437.587,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",570,suave ondulado,4,Terço médio
+C23,xx-xx-2011,EPSG:29192,470.587,7.420.413,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Neossolo Regolítico Eutrófico Típico, A chernozêmico, Textura argilosa",600,ondulado,22,-
+C24,xx-xx-2011,EPSG:29192,470.587,7.420.477,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Nitossolo Vermelho Eutroférrico Típico, A moderado, Textura argilosa endopedregosa",600,ondulado,19,-
+C25,xx-xx-2011,EPSG:29192,470.587,7.420.245,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Nitossolo Vermelho Eutroférrico Latossólico, A moderado, Textura argilosa",600,ondulado,16,-
+C26,xx-xx-2011,EPSG:29192,470.469,7.433.032,15,GPS,BR,PR,Cambé,Simples,1,"2,00","Latossolo Vermelho Eutroférrico Típico, A moderado, Textura muito argilosa",589,suave ondulado,4,-

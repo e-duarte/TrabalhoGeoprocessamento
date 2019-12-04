@@ -1,10 +1,11 @@
+library(mice, warn.conflicts = FALSE)
+
 if(!file.exists("data/dataset_tratada.csv")){
   cat("Erro - Arquivo dataset_tratada não encontrado")
 }else{
   ctb <- read.csv2("data/dataset_tratada.csv", sep=",", dec = ".")
-  library(mice, warn.conflicts = FALSE)
   
-  tempData <- mice(ctb,m=5,maxit=50,meth='cart',seed=500)
+  tempData <- mice(ctb,m=5,maxit=50, meth='pmm',seed=500)
   
   data_impute <- complete(tempData)
   
