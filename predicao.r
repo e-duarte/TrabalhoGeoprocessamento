@@ -1,12 +1,20 @@
-imput <- read.csv2("data/dataset_imputed.csv", sep=",", dec = ".")
+todos <- read.csv2("data/dados_completos.csv", sep=",", dec = ".")
+londrina <- read.csv2("data/dados_completos_londrina.csv", sep=",", dec = ".")
 #model <- lm(cbind(coord_x, coord_y) ~ . , data=imput)
 
-modelx <- lm(coord_x ~ . , data=imput) 
-modely <- lm(coord_y ~ . , data=imput)
+# modelo para dados de todos os municípios
+todos_modelx <- lm(coord_x ~ . , data=todos) 
+todos_modely <- lm(coord_y ~ . , data=todos)
 
-summary(modelx)
-summary(modely)
+# modelo para dados de londrina
+londrina_modelx <- lm(coord_x ~ . , data=londrina) 
+londrina_modely <- lm(coord_y ~ . , data=londrina)
 
+summary(todos_modelx)
+summary(todos_modely)
+
+summary(londrina_modelx)
+summary(londrina_modely)
 
 
 

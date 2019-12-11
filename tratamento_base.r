@@ -20,7 +20,7 @@ londrina <-
   googlesheets::gs_read(ws = 'observacao', na = '-', comment ="#metadado>",
                         locale = readr::locale(dec = ','))
 
-obs <- rbind(londrina) %>%
+obs_londrina <- rbind(londrina) %>%
   dplyr::mutate(taxon = stringr::word(taxon_sibcs_2006, sep=','),
                relevo_declividade = stringr::word(relevo_declividade, sep="-"),
                relevo_declividade = as.numeric(relevo_declividade)) %>%
@@ -28,11 +28,20 @@ obs <- rbind(londrina) %>%
                -coord_fonte, -pais_id, -estado_id, -municipio_id, -amostra_tipo,
               -amostra_quanti, -amostra_area, -taxon_sibcs_2006)
 
+obs <- rbind(belavista,cambe,londrina) %>%
+  dplyr::mutate(taxon = stringr::word(taxon_sibcs_2006, sep=','),
+                relevo_declividade = stringr::word(relevo_declividade, sep="-"),
+                relevo_declividade = as.numeric(relevo_declividade)) %>%
+  dplyr::select(-observacao_id, -observacao_data, -coord_sistema, -coord_precisao,
+                -coord_fonte, -pais_id, -estado_id, -municipio_id, -amostra_tipo,
+                -amostra_quanti, -amostra_area, -taxon_sibcs_2006)
+
 
 if(!dir.exists("data")){
   dir.create("data")
 }
 
 write.csv(obs, "data/dataset_tratada.csv", row.names = FALSE)
+write.csv(obs_londrina, "data/datasetLondrina_tratada.csv", row.names = FALSE)
 
 
