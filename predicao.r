@@ -1,14 +1,19 @@
 todos <- read.csv2("data/dados_completos.csv", sep=",", dec = ".")
 londrina <- read.csv2("data/dados_completos_londrina.csv", sep=",", dec = ".")
-#model <- lm(cbind(coord_x, coord_y) ~ . , data=imput)
+#model <- lm(cbind(coord_x, coord_y) ~ . , data=todos)
+#summary(model)
 
 # modelo para dados de todos os municípios
-todos_modelx <- lm(coord_x ~ . , data=todos) 
-todos_modely <- lm(coord_y ~ . , data=todos)
+todos_modelx <- lm(coord_x ~ relevo_elevacao + relevo_local +
+                     relevo_declividade + relevo_posicao +  taxon, data=todos) 
+todos_modely <- lm(coord_y ~ relevo_elevacao + relevo_local +
+                     relevo_declividade + relevo_posicao +  taxon, data=todos)
 
 # modelo para dados de londrina
-londrina_modelx <- lm(coord_x ~ . , data=londrina) 
-londrina_modely <- lm(coord_y ~ . , data=londrina)
+londrina_modelx <- lm(coord_x ~  relevo_elevacao + relevo_local +
+                        relevo_declividade + relevo_posicao +  taxon, data=londrina)
+londrina_modely <- lm(coord_y ~ relevo_elevacao + relevo_local +
+                        relevo_declividade + relevo_posicao +  taxon, data=londrina)
 
 summary(todos_modelx)
 summary(todos_modely)
