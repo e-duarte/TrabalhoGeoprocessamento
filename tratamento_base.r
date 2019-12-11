@@ -20,7 +20,7 @@ londrina <-
   googlesheets::gs_read(ws = 'observacao', na = '-', comment ="#metadado>",
                         locale = readr::locale(dec = ','))
 
-obs <- rbind(belavista, cambe, londrina) %>%
+obs <- rbind(londrina) %>%
   dplyr::mutate(taxon = stringr::word(taxon_sibcs_2006, sep=','),
                relevo_declividade = stringr::word(relevo_declividade, sep="-"),
                relevo_declividade = as.numeric(relevo_declividade)) %>%
